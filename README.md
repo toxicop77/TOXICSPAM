@@ -34,4 +34,4 @@
 
 
 # ꜱᴜᴘᴘᴏʀᴛ ✨
-<a href="https://t.me/@TOXIC_X_SUPPORT"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="https://t.me/TOXIC_X_SUPPORT"><img src="https://img.shields.io/badge/Join-Telegram%20GROUP-red.svg?logo=Telegram"></a>
