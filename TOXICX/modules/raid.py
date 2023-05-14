@@ -173,3 +173,131 @@ async def _(e):
             await e.reply("» ʀᴇᴘʟʏ ʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ !! ✅", parse_mode=None, link_preview=None )
         else:
             await e.reply(usage)
+
+            @TX1.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@TX2.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@TX3.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@TX4.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@TX5.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@TX6.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@TX7.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@TX8.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@TX9.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+@TX10.on(events.NewMessage(incoming=True, pattern=r"\%smraid(?: |$)(.*)" % hl))
+async def spam(e):
+    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗠𝗥𝗮𝗶𝗱\n  » {hl}mraid <count> <Username of User>\n  » {hl}mraid <count> <reply to a User>"
+    if e.sender_id in SUDO_USERS:
+        TXmr = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        await e.get_reply_message()
+        if len(TXmr) == 2:
+            message = str(TXmr[1])
+            a = await e.client.get_entity(message)
+            g = a.id
+            c = a.first_name
+            username = f"[{c}](tg://user?id={g})"
+            counter = int(TXmr[0])
+            for _ in range(counter):
+                reply = random.choice(MRAID)
+                caption = f"{username} {reply}"
+                await e.client.send_message(e.chat_id, caption)
+                await asyncio.sleep(0.3)
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            c = b.first_name
+            counter = int(TXmr[0])
+            username = f"[{c}](tg://user?id={g})"
+            for _ in range(counter):
+                reply = random.choice(MRAID)
+                caption = f"{username} {reply}"
+                await e.client.send_message(e.chat_id, caption)
+                await asyncio.sleep(0.3)
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None )
+
+
+@TX1.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@TX2.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@TX3.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@TX4.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@TX5.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@TX6.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@TX7.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@TX8.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@TX9.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+@TX10.on(events.NewMessage(incoming=True, pattern=r"\%ssraid(?: |$)(.*)" % hl))
+async def spam(e):
+    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝗦𝗥𝗮𝗶𝗱\n  » {hl}sraid <count> <Username of User>\n  » {hl}sraid <count> <reply to a User>"
+    if e.sender_id in SUDO_USERS:
+        TXsr = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        if len(MKsr) == 2:
+            message = str(TXsr[1])
+            print(message)
+            a = await e.client.get_entity(message)
+            g = a.id
+            c = a.first_name
+            username = f"[{c}](tg://user?id={g})"
+            counter = int(TXsr[0])
+            for _ in range(counter):
+                reply = random.choice(SRAID)
+                caption = f"{username} {reply}"
+                await e.client.send_message(e.chat_id, caption)
+                await asyncio.sleep(0.3)
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            c = b.first_name
+            counter = int(TXsr[0])
+            username = f"[{c}](tg://user?id={g})"
+            for _ in range(counter):
+                reply = random.choice(SRAID)
+                caption = f"{username} {reply}"
+                await e.client.send_message(e.chat_id, caption)
+                await asyncio.sleep(0.3)
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None )
+
+
+@TX1.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@TX2.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@TX3.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@TX4.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@TX5.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@TX6.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@TX7.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@TX8.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@TX9.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+@TX10.on(events.NewMessage(incoming=True, pattern=r"\%scraid(?: |$)(.*)" % hl))
+async def spam(e):
+    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: C𝗥𝗮𝗶𝗱\n  » {hl}craid <count> <Username of User>\n  » {hl}craid <count> <reply to a User>"
+    if e.sender_id in SUDO_USERS:
+        TXsr = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        await e.get_reply_message()
+        if len(TXsr) == 2:
+            message = str(TXsr[1])
+            a = await e.client.get_entity(message)
+            g = a.id
+            c = a.first_name
+            username = f"[{c}](tg://user?id={g})"
+            counter = int(TXsr[0])
+            for _ in range(counter):
+                reply = random.choice(CRAID)
+                caption = f"{username} {reply}"
+                await e.client.send_message(e.chat_id, caption)
+                await asyncio.sleep(0.3)
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            c = b.first_name
+            counter = int(TXsr[0])
+            username = f"[{c}](tg://user?id={g})"
+            for _ in range(counter):
+                reply = random.choice(CRAID)
+                caption = f"{username} {reply}"
+                await e.client.send_message(e.chat_id, caption)
+                await asyncio.sleep(0.3)
+        else:
+            await e.reply(usage, parse_mode=None, link_preview=None )
