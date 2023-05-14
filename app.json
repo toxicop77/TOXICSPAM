@@ -1,14 +1,14 @@
 {
-    "name": "PythonX HERE.",
-    "logo": "https://te.legra.ph/file/dc6415d3003c20b76793b.jpg",
+    "name": "TOXICX HERE.",
+    "logo": "https://graph.org/file/9ba2e1c637ca3d2809769.jpg",
     "keywords": [
         "telegram",
         "telethon",
         "telegram-bot",
-        "PythonX",
+        "TOXICX",
         "SpamBots"
     ],
-    "repository": "https://github.com/mrtosumemon/ThetosuBotSpam",
+    "repository": "https://github.com/TOXICOP7755/TOXICSPAM",
     "env": {
      "CMD_HNDLR": {
             "description": "Custom command handler.",
