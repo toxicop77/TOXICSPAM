@@ -114,3 +114,62 @@ async def _(e):
                 phucker = [user_id]
                 gey.append(phucker)
                 await e.reply("» ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʀᴇᴘʟʏʀᴀɪᴅ !! ✅", parse_mode=None, link_preview=None)
+
+                elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            user_id = int(b.id)
+            if int(user_id) in TOXIC:
+                await e.reply("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ TOXIC'ꜱ ᴏᴡɴᴇʀ", parse_mode=None, link_preview=None)
+            elif int(user_id) == OWNER_ID:
+                await e.reply("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴏᴡɴᴇʀ ᴏꜰ ᴛʜᴇꜱᴇ ʙᴏᴛꜱ", parse_mode=None, link_preview=None)
+            elif int(user_id) in SUDO_USERS:
+                await e.reply("» ɴᴏ, ᴛʜɪꜱ ɢᴜʏ ɪꜱ ᴀ ꜱᴜᴅᴏ ᴜꜱᴇʀ", parse_mode=None, link_preview=None)
+            else:
+                que[user_id] = []
+                gey = que.get(user_id)
+                phucker = [user_id]
+                gey.append(phucker)
+                await e.reply("» ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʀᴇᴘʟʏʀᴀɪᴅ !! ✅", parse_mode=None, link_preview=None )
+        else:
+            await e.reply(usage)
+
+
+@TX1.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@TX2.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@TX3.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@TX4.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@TX5.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@TX6.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@TX7.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@TX8.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@TX9.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+@TX10.on(events.NewMessage(incoming=True, pattern=r"\%sdrraid(?: |$)(.*)" % hl))
+async def _(e):
+    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲: 𝐃𝐑𝐞𝐩𝐥𝐲𝐑𝐚𝐢𝐝\n  » {hl}drraid <Username of User>\n  » {hl}drraid <reply to a User>"
+    global que    
+    if e.sender_id in SUDO_USERS:
+        TOXX = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+
+        if len(e.text) > 12:
+            message = str(TOXX[0])
+            a = await e.client.get_entity(message)
+            g = a.id
+            try:
+                queue = que.get(g)
+                queue.pop(0)
+            except Exception:
+                pass
+            await e.reply("» ʀᴇᴘʟʏ ʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ !! ✅", parse_mode=None, link_preview=None )
+        elif e.reply_to_msg_id:             
+            a = await e.get_reply_message()
+            b = await e.client.get_entity(a.sender_id)
+            g = b.id
+            try:
+                queue = que.get(g)
+                queue.pop(0)
+            except Exception:
+                pass
+            await e.reply("» ʀᴇᴘʟʏ ʀᴀɪᴅ ᴅᴇ-ᴀᴄᴛɪᴠᴀᴛᴇᴅ !! ✅", parse_mode=None, link_preview=None )
+        else:
+            await e.reply(usage)
