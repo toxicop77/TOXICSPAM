@@ -1,1 +1,1 @@
-Altron: python -m main.py
+TOXIC: python -m main.py
