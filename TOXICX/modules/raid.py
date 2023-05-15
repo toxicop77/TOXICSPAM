@@ -115,7 +115,7 @@ async def _(e):
                 gey.append(phucker)
                 await e.reply("» ᴀᴄᴛɪᴠᴀᴛᴇᴅ ʀᴇᴘʟʏʀᴀɪᴅ !! ✅", parse_mode=None, link_preview=None)
 
-                elif e.reply_to_msg_id:             
+         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
             user_id = int(b.id)
