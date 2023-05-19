@@ -49,7 +49,7 @@ async def help(event):
 𝗟𝗲𝗮𝘃𝗲: ᴛᴏ ʟᴇᴀᴠᴇ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ
   1) {hl}leave <group/chat id>
   2) {hl}leave : Type in the Group bot will auto leave that group
-**© @YOUR_GODFATHER_XD**
+**© @MERA_JIJA_HAI_TU**
 """
 
                  
@@ -73,7 +73,7 @@ raid_msg = f"""
 𝐂𝐑𝐚𝐢𝐝: ᴀʙᴄᴅ ʀᴀɪᴅ ᴏɴ ᴛʜᴇ ᴜꜱᴇʀ!!
   1) {hl}craid <count> <username>
   2) {hl}craid <count> <reply to user>
-**© @YOUR_GODFATHER_XD**
+**© @MERA_JIJA_HAI_TU**
 """
 
 spam_msg = f"""
@@ -85,20 +85,20 @@ spam_msg = f"""
   1) {hl}pspam <count>
 𝗛𝗮𝗻𝗴: ꜱᴘᴀᴍꜱ ʜᴀɴɢɪɴɢ ᴍᴇꜱꜱᴀɢᴇ ꜰᴏʀ ɢɪᴠᴇɴ ᴄᴏᴜɴᴛᴇʀ.
   1) {hl}hang <counter> (you can reply any message if you want bot to reply that message and do spamming)
-** © @YOUR_GODFATHER_XD**
+** © @MERA_JIJA_HAI_TU**
 """                     
            
            
-@MK1.on(events.CallbackQuery(pattern=r"help_back"))
-@MK2.on(events.CallbackQuery(pattern=r"help_back"))
-@MK3.on(events.CallbackQuery(pattern=r"help_back"))
-@MK4.on(events.CallbackQuery(pattern=r"help_back"))
-@MK5.on(events.CallbackQuery(pattern=r"help_back"))
-@MK6.on(events.CallbackQuery(pattern=r"help_back"))
-@MK7.on(events.CallbackQuery(pattern=r"help_back"))
-@MK8.on(events.CallbackQuery(pattern=r"help_back"))
-@MK9.on(events.CallbackQuery(pattern=r"help_back"))
-@MK10.on(events.CallbackQuery(pattern=r"help_back"))
+@TX1.on(events.CallbackQuery(pattern=r"help_back"))
+@TX2.on(events.CallbackQuery(pattern=r"help_back"))
+@TX3.on(events.CallbackQuery(pattern=r"help_back"))
+@TX4.on(events.CallbackQuery(pattern=r"help_back"))
+@TX5.on(events.CallbackQuery(pattern=r"help_back"))
+@TX6.on(events.CallbackQuery(pattern=r"help_back"))
+@TX7.on(events.CallbackQuery(pattern=r"help_back"))
+@TX8.on(events.CallbackQuery(pattern=r"help_back"))
+@TX9.on(events.CallbackQuery(pattern=r"help_back"))
+@TX10.on(events.CallbackQuery(pattern=r"help_back"))
 async def helpback(event):
    if event.query.user_id in SUDO_USERS:    
       await event.edit(
@@ -112,85 +112,85 @@ async def helpback(event):
             Button.inline("• ᴇxᴛʀᴀ •", data="extra"),
            ],
            [
-            Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/ABOUT_GODFATHER"),
-            Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/INCRICIBLE")
+            Button.url("• ᴄʜᴀɴɴᴇʟ •", "https://t.me/KNOW_UR_JIJA"),
+            Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/TOXIC_X_SUPPORT")
            ],
            ],
         )           
    else:
-        await event.answer("Make Your Own Tosu Bots !! @YOUR_GODFATHER_XD", cache_time=0, alert=True)
+        await event.answer("Make Your Own TOXIC Bots !! @MERA_JIJA_HAI_TU", cache_time=0, alert=True)
 
 
-@MK1.on(events.CallbackQuery(pattern=r"spam"))
-@MK2.on(events.CallbackQuery(pattern=r"spam"))
-@MK3.on(events.CallbackQuery(pattern=r"spam"))
-@MK4.on(events.CallbackQuery(pattern=r"spam"))
-@MK5.on(events.CallbackQuery(pattern=r"spam"))
-@MK6.on(events.CallbackQuery(pattern=r"spam"))
-@MK7.on(events.CallbackQuery(pattern=r"spam"))
-@MK8.on(events.CallbackQuery(pattern=r"spam"))
-@MK9.on(events.CallbackQuery(pattern=r"spam"))
-@MK10.on(events.CallbackQuery(pattern=r"spam"))
+@TX1.on(events.CallbackQuery(pattern=r"spam"))
+@TX2.on(events.CallbackQuery(pattern=r"spam"))
+@TX3.on(events.CallbackQuery(pattern=r"spam"))
+@TX4.on(events.CallbackQuery(pattern=r"spam"))
+@TX5.on(events.CallbackQuery(pattern=r"spam"))
+@TX6.on(events.CallbackQuery(pattern=r"spam"))
+@TX7.on(events.CallbackQuery(pattern=r"spam"))
+@TX8.on(events.CallbackQuery(pattern=r"spam"))
+@TX9.on(events.CallbackQuery(pattern=r"spam"))
+@TX10.on(events.CallbackQuery(pattern=r"spam"))
 async def help_spam(event):
    if event.query.user_id in SUDO_USERS:    
        await event.edit(spam_msg,
             buttons=[[Button.inline("< Back", data="help_back"),],],
             ) 
    else:
-        await event.answer("Make Your Own Tosu Bots !! @YOUR_GODFATHER_XD", cache_time=0, alert=True)
+        await event.answer("Make Your Own TOXIC Bots !! @MERA_JIJA_HAI_TU", cache_time=0, alert=True)
 
 
-@MK1.on(events.CallbackQuery(pattern=r"raid"))
-@MK2.on(events.CallbackQuery(pattern=r"raid"))
-@MK3.on(events.CallbackQuery(pattern=r"raid"))
-@MK4.on(events.CallbackQuery(pattern=r"raid"))
-@MK5.on(events.CallbackQuery(pattern=r"raid"))
-@MK6.on(events.CallbackQuery(pattern=r"raid"))
-@MK7.on(events.CallbackQuery(pattern=r"raid"))
-@MK8.on(events.CallbackQuery(pattern=r"raid"))
-@MK9.on(events.CallbackQuery(pattern=r"raid"))
-@MK10.on(events.CallbackQuery(pattern=r"raid"))
+@TX1.on(events.CallbackQuery(pattern=r"raid"))
+@TX2.on(events.CallbackQuery(pattern=r"raid"))
+@TX3.on(events.CallbackQuery(pattern=r"raid"))
+@TX4.on(events.CallbackQuery(pattern=r"raid"))
+@TX5.on(events.CallbackQuery(pattern=r"raid"))
+@TX6.on(events.CallbackQuery(pattern=r"raid"))
+@TX7.on(events.CallbackQuery(pattern=r"raid"))
+@TX8.on(events.CallbackQuery(pattern=r"raid"))
+@TX9.on(events.CallbackQuery(pattern=r"raid"))
+@TX10.on(events.CallbackQuery(pattern=r"raid"))
 async def help_raid(event):
      if event.query.user_id in SUDO_USERS:
         await event.edit(raid_msg,
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )  
      else:
-        await event.answer("Make Your Own Tosu bots !! @YOUR_GODFATHER_XD", cache_time=0, alert=True)
+        await event.answer("Make Your Own TOXIC bots !! @MERA_JIJA_HAI_TU", cache_time=0, alert=True)
 
 
-@MK1.on(events.CallbackQuery(pattern=r"extra"))
-@MK2.on(events.CallbackQuery(pattern=r"extra"))
-@MK3.on(events.CallbackQuery(pattern=r"extra"))
-@MK4.on(events.CallbackQuery(pattern=r"extra"))
-@MK5.on(events.CallbackQuery(pattern=r"extra"))
-@MK6.on(events.CallbackQuery(pattern=r"extra"))
-@MK7.on(events.CallbackQuery(pattern=r"extra"))
-@MK8.on(events.CallbackQuery(pattern=r"extra"))
-@MK9.on(events.CallbackQuery(pattern=r"extra"))
-@MK10.on(events.CallbackQuery(pattern=r"extra"))
+@TX1.on(events.CallbackQuery(pattern=r"extra"))
+@TX2.on(events.CallbackQuery(pattern=r"extra"))
+@TX3.on(events.CallbackQuery(pattern=r"extra"))
+@TX4.on(events.CallbackQuery(pattern=r"extra"))
+@TX5.on(events.CallbackQuery(pattern=r"extra"))
+@TX6.on(events.CallbackQuery(pattern=r"extra"))
+@TX7.on(events.CallbackQuery(pattern=r"extra"))
+@TX8.on(events.CallbackQuery(pattern=r"extra"))
+@TX9.on(events.CallbackQuery(pattern=r"extra"))
+@TX10.on(events.CallbackQuery(pattern=r"extra"))
 async def help_extra(event):
    if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
    else:
-        await event.answer("Make Your Own Tosu Bots !! @YOUR_GODFATHER_XD", cache_time=0, alert=True)
+        await event.answer("Make Your Own TOXIC Bots !! @MERA_JIJA_HAI_TU", cache_time=0, alert=True)
 
-@MK1.on(events.CallbackQuery(pattern=r"extra"))
-@MK2.on(events.CallbackQuery(pattern=r"extra"))
-@MK3.on(events.CallbackQuery(pattern=r"extra"))
-@MK4.on(events.CallbackQuery(pattern=r"extra"))
-@MK5.on(events.CallbackQuery(pattern=r"extra"))
-@MK6.on(events.CallbackQuery(pattern=r"extra"))
-@MK7.on(events.CallbackQuery(pattern=r"extra"))
-@MK8.on(events.CallbackQuery(pattern=r"extra"))
-@MK9.on(events.CallbackQuery(pattern=r"extra"))
-@MK10.on(events.CallbackQuery(pattern=r"extra"))
+@TX1.on(events.CallbackQuery(pattern=r"extra"))
+@TX2.on(events.CallbackQuery(pattern=r"extra"))
+@TX3.on(events.CallbackQuery(pattern=r"extra"))
+@TX4.on(events.CallbackQuery(pattern=r"extra"))
+@TX5.on(events.CallbackQuery(pattern=r"extra"))
+@TX6.on(events.CallbackQuery(pattern=r"extra"))
+@TX7.on(events.CallbackQuery(pattern=r"extra"))
+@TX8.on(events.CallbackQuery(pattern=r"extra"))
+@TX9.on(events.CallbackQuery(pattern=r"extra"))
+@TX10.on(events.CallbackQuery(pattern=r"extra"))
 async def help_extra(event):
    if event.query.user_id in SUDO_USERS:
         await event.edit(extra_msg,
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
    else:
-        await event.answer("Make Your Own Tosu Bots !! @YOUR_GODFATHER_XD", cache_time=0, alert=True)
+        await event.answer("Make Your Own TOXIC Bots !! @MERA_JIJA_HAI_TU", cache_time=0, alert=True)
